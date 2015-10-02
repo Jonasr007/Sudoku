@@ -25,8 +25,8 @@ public class SudokuVerifier {
 					+ candidateSolution.substring(27*j+i*3+9,27*j+i*3+3+9) 
 					+ candidateSolution.substring(27*j+i*3+18,27*j+i*3+3+18); 
 			System.out.println(tmp);
-			if(!unityCorrect(tmp.toCharArray()))
-				return -2;
+		//	if(!unityCorrect(tmp.toCharArray()))
+			//	return -2;
 			}
 		}
 		
