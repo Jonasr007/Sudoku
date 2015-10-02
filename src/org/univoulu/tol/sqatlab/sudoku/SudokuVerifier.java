@@ -9,6 +9,8 @@ public class SudokuVerifier {
 		//if(candidateSolution.length()!=81)
 		//	return -5;
 		
+		System.out.println(candidateSolution);
+		
 		char[] solluctionArray = candidateSolution.toCharArray();		
 		if(!correctNumbers(solluctionArray)) {
 			return -1;
