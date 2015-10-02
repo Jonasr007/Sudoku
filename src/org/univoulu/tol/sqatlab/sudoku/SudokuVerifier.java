@@ -33,9 +33,12 @@ public class SudokuVerifier {
 	}
 	
 	public boolean correctNumbers(char [] tmp) {
+		int [] tmpI = new int[tmp.length];
+		for (int i=0; i<tmpI.length;i++) {
+			tmpI[i]= tmp[i];
+		}
+		
 		for (int i=0; i<tmp.length; i++) {
-			System.out.println(tmp[i]);
-
 			if(tmp[i]<'0' && tmp[i]>'9') {
 				System.out.println(tmp[i]);
 				return false;
