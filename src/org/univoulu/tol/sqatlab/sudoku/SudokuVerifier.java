@@ -9,7 +9,6 @@ public class SudokuVerifier {
 		//if(candidateSolution.length()!=81)
 		//	return -5;
 		
-		System.out.println(candidateSolution);
 		
 		char[] solluctionArray = candidateSolution.toCharArray();		
 		if(!correctNumbers(solluctionArray)) {
@@ -22,7 +21,7 @@ public class SudokuVerifier {
 		}
 		
 		for (int i=0; i<subgrids.length; i++) {
-			String tmp = candidateSolution.substring(0,8);
+			String tmp = candidateSolution.substring(0,9);
 			System.out.println(tmp);
 			if(!unityCorrect(tmp.toCharArray()))
 				return -3;
