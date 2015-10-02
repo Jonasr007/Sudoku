@@ -20,8 +20,8 @@ public class SudokuVerifier {
 		// j is the column index (grid 1 or 2 or 3 in the column)
 		String [] subgrids = new String[9];
 		for (int i=0; i<3; i++) {
-			for (int j=1; j<4; j++) {
-			String tmp= candidateSolution.substring(0*j+i*3,2*j+i*3); 
+			for (int j=0; j<3; j++) {
+			String tmp= candidateSolution.substring(27*j+i*3,2*j+i*3); 
 				//	+ candidateSolution.substring(9*j+i*3,9*j+2+i*3) 
 				//	+ candidateSolution.substring(18*j+i*3,18*j+2+i*3); 
 			System.out.println(tmp);
