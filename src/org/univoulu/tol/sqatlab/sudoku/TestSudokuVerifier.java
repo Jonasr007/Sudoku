@@ -10,7 +10,7 @@ public class TestSudokuVerifier {
 	@Test
 	public void test() {
 		String s= 	"123456789" +
-					"234567891" +
+					"134567891" +
 					"345678912" +
 					"456789123" +
 					"567891234" + 
