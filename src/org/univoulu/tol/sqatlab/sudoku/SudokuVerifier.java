@@ -21,9 +21,9 @@ public class SudokuVerifier {
 		String [] subgrids = new String[9];
 		for (int i=0; i<3; i++) {
 			for (int j=0; j<3; j++) {
-			String tmp= candidateSolution.substring(27*j+i*3,27*j+i*3+3); 
-				//	+ candidateSolution.substring(9*j+i*3,9*j+2+i*3) 
-				//	+ candidateSolution.substring(18*j+i*3,18*j+2+i*3); 
+			String tmp= candidateSolution.substring(27*j+i*3,27*j+i*3+3) 
+					+ candidateSolution.substring(27*j+i*3+9,27*j+i*3+3+9) 
+					+ candidateSolution.substring(27*j+i*3+18,27*j+i*3+3+18); 
 			System.out.println(tmp);
 			if(!unityCorrect(tmp.toCharArray()))
 				return -2;
