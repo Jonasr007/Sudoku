@@ -31,8 +31,10 @@ public class SudokuVerifier {
 			String tmp = candidateSolution.substring(0+i) + candidateSolution.substring(9+i) + candidateSolution.substring(18+i) 
 			+ candidateSolution.substring(27+i) + candidateSolution.substring(36+i) + candidateSolution.substring(45+i) 
 			+ candidateSolution.substring(54+i) + candidateSolution.substring(63+i) + candidateSolution.substring(72+i);
-			if(!unityCorrect(tmp.toCharArray()))
+			if(!unityCorrect(tmp.toCharArray())) {
+				System.out.println(tmp);
 				return -4;
+			}
 		}
 		
 		return 0;		
