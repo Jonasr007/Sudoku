@@ -7,9 +7,16 @@ public class SudokuVerifier {
 		
 		// Verify lenght
 		if(candidateSolution.length()!=81)
-			return -5;				
-		return 0;
+			return -5;
+		
+		char[] solluctionArray = candidateSolution.toCharArray();
+		
+		return 0;		
+	}
+	
+	public boolean compare() {
 		
 		
+		return true;
 	}
 }
