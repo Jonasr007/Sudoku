@@ -11,7 +11,7 @@ public class SudokuVerifier {
 		
 		char[] solluctionArray = candidateSolution.toCharArray();
 		String tmp = candidateSolution.substring(0, 9);
-		if(unityCorrect(tmp.toCharArray()))
+		if(!unityCorrect(tmp.toCharArray()))
 			return -1;
 		return 0;		
 	}
