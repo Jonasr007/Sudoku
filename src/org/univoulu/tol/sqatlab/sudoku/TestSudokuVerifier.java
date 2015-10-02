@@ -9,8 +9,9 @@ public class TestSudokuVerifier {
 	
 	@Test
 	public void test() {
+		String s= "";
 		sV= new SudokuVerifier(); 
-		
+		System.out.println(sV.verify(s));
 		//fail("Not yet implemented");
 	    //assertEquals();
 		
