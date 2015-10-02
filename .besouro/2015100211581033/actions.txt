@@ -56,3 +56,6 @@ RefactoringAction 1443777582811 SudokuVerifier.java RENAME Correct(char=>boolean
 RefactoringAction 1443777585329 SudokuVerifier.java RENAME CorrectNumbers(char=>boolean correctNumbers(char METHOD
 EditAction 1443777827066 SudokuVerifier.java 843 3 8 0
 EditAction 1443777875684 SudokuVerifier.java 912 3 9 0
+UnitTestCaseAction 1443777876031 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443777876032 TestSudokuVerifier OK
+EditAction 1443777903730 SudokuVerifier.java 914 3 9 0
