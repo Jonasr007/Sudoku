@@ -21,7 +21,7 @@ public class SudokuVerifier {
 		}
 		
 		for (int i=0; i<subgrids.length; i++) {
-			String tmp = candidateSolution.substring(0+10*i,9+10*i);
+			String tmp = candidateSolution.substring(0+9*i,9+9*i);
 		//	System.out.println(tmp);
 			if(!unityCorrect(tmp.toCharArray()))
 				return -3;
