@@ -28,11 +28,10 @@ public class SudokuVerifier {
 				
 		// Test Columns
 		for (int i=0; i<subgrids.length; i++) {
-			String tmp = candidateSolution.substring(0+i) + candidateSolution.substring(9+i) + candidateSolution.substring(18+i) 
-			+ candidateSolution.substring(27+i) + candidateSolution.substring(36+i) + candidateSolution.substring(45+i) 
-			+ candidateSolution.substring(54+i) + candidateSolution.substring(63+i) + candidateSolution.substring(72+i);
+			String tmp = ""+ candidateSolution.charAt(0+i) + candidateSolution.charAt(9+i) + candidateSolution.charAt(18+i) 
+			+ candidateSolution.charAt(27+i) + candidateSolution.charAt(36+i) + candidateSolution.charAt(45+i) 
+			+ candidateSolution.charAt(54+i) + candidateSolution.charAt(63+i) + candidateSolution.charAt(72+i);
 			if(!unityCorrect(tmp.toCharArray())) {
-				System.out.println(candidateSolution.valueOf(3));
 				return -4;
 			}
 		}
