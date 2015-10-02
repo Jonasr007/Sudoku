@@ -19,8 +19,9 @@ public class SudokuVerifier {
 	public boolean unityCorrect(char [] tmp) {
 		for (int i=0; i<tmp.length-1; i++) {
 			for (int j=0; j<tmp.length-1; j++) {
-				if(tmp[i]==tmp[j])
+				if(tmp[i]==tmp[j]&&i!=j) {
 					return false;
+				}
 			}
 		}		
 		return true;
