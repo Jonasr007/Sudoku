@@ -22,11 +22,10 @@ public class SudokuVerifier {
 		
 		for (int i=0; i<subgrids.length; i++) {
 			String tmp = candidateSolution.substring(0+10*i,9+10*i);
-			System.out.println(tmp);
+		//	System.out.println(tmp);
 			if(!unityCorrect(tmp.toCharArray()))
 				return -3;
 		}
-
 		
 		return 0;		
 	}
