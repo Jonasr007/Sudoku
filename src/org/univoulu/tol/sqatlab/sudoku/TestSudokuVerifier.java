@@ -18,8 +18,10 @@ public class TestSudokuVerifier {
 					"789123456" +
 					"891234567" +
 					"912345678";
+		
+		String s1 = "417369825632158947958724316825437169791586432346912758289643571573291684164875293";
 		sV= new SudokuVerifier(); 
-		System.out.println(sV.verify(s));
+		System.out.println(sV.verify(s1));
 		//fail("Not yet implemented");
 	    //assertEquals();
 		
