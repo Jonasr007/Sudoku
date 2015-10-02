@@ -27,3 +27,5 @@ RefactoringAction 1443776881309 SudokuVerifier.java RENAME unityCorrect()=>boole
 EditAction 1443777005177 SudokuVerifier.java 547 2 5 0
 EditAction 1443777011591 TestSudokuVerifier.java 223 1 1 0
 EditAction 1443777131824 TestSudokuVerifier.java 249 1 0 0
+RefactoringAction 1443777144409 TestSudokuVerifier.java ADD SudokuVerifier sV FIELD
+EditAction 1443777162455 TestSudokuVerifier.java 302 1 1 0
