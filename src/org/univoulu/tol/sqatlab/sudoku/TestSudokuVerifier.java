@@ -15,7 +15,7 @@ public class TestSudokuVerifier {
 					"456789123" +
 					"567891234" + 
 					"678912345" +
-					"689123456" +
+					"789123456" +
 					"891234567" +
 					"912345678";
 		sV= new SudokuVerifier(); 
