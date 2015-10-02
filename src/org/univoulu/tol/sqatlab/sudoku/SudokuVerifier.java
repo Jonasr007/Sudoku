@@ -10,13 +10,16 @@ public class SudokuVerifier {
 			return -5;
 		
 		char[] solluctionArray = candidateSolution.toCharArray();
-		
 		return 0;		
 	}
 	
-	public boolean compare() {
-		
-		
+	public boolean unityCorrect(int [] tmp) {
+		for (int i=0; i<tmp.length-1; i++) {
+			for (int j=0; j<tmp.length-1; j++) {
+				if(tmp[i]==tmp[j])
+					return false;
+			}
+		}		
 		return true;
 	}
 }

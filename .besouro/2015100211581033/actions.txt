@@ -10,3 +10,18 @@ RefactoringAction 1443776425242 TestSudokuVerifier.java REMOVE t FIELD
 RefactoringAction 1443776683453 SudokuVerifier.java ADD boolean compare FIELD
 RefactoringAction 1443776684967 SudokuVerifier.java RENAME compare=>boolean compare() METHOD
 EditAction 1443776725624 SudokuVerifier.java 406 2 4 0
+RefactoringAction 1443776745621 SudokuVerifier.java RENAME compare()=>boolean compare(int, int) METHOD
+RefactoringAction 1443776749635 SudokuVerifier.java RENAME compare(int, int)=>boolean compare(int, int, int) METHOD
+RefactoringAction 1443776752147 SudokuVerifier.java RENAME compare(int, int, int)=>boolean compare(int) METHOD
+RefactoringAction 1443776771212 SudokuVerifier.java RENAME compare(int)=>boolean compare(int, int) METHOD
+RefactoringAction 1443776781228 SudokuVerifier.java RENAME compare(int, int)=>boolean compare(int, int, int, int, int, int) METHOD
+RefactoringAction 1443776787773 SudokuVerifier.java RENAME compare(int, int, int, int, int, int)=>boolean compare(int, int, int, int, int, int, int, int, int) METHOD
+RefactoringAction 1443776831887 SudokuVerifier.java RENAME compare(int, int, int, int, int, int, int, int, int)=>boolean unitz(int, int, int, int, int, int, int, int, int) METHOD
+RefactoringAction 1443776832902 SudokuVerifier.java RENAME unitz(int, int, int, int, int, int, int, int, int)=>boolean unit(int, int, int, int, int, int, int, int, int) METHOD
+RefactoringAction 1443776833916 SudokuVerifier.java RENAME unit(int, int, int, int, int, int, int, int, int)=>boolean unity(int, int, int, int, int, int, int, int, int) METHOD
+RefactoringAction 1443776835931 SudokuVerifier.java RENAME unity(int, int, int, int, int, int, int, int, int)=>boolean unityCorrect(int, int, int, int, int, int, int, int, int) METHOD
+RefactoringAction 1443776874268 SudokuVerifier.java RENAME unityCorrect(int, int, int, int, int, int, int, int, int)=>boolean unityCorrect() METHOD
+RefactoringAction 1443776876282 SudokuVerifier.java RENAME unityCorrect()=>boolean unityCorrect(int METHOD
+RefactoringAction 1443776879296 SudokuVerifier.java RENAME unityCorrect(int=>boolean unityCorrect() METHOD
+RefactoringAction 1443776881309 SudokuVerifier.java RENAME unityCorrect()=>boolean unityCorrect(int METHOD
+EditAction 1443777005177 SudokuVerifier.java 547 2 5 0
