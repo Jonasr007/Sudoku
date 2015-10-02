@@ -32,7 +32,7 @@ public class SudokuVerifier {
 			+ candidateSolution.substring(27+i) + candidateSolution.substring(36+i) + candidateSolution.substring(45+i) 
 			+ candidateSolution.substring(54+i) + candidateSolution.substring(63+i) + candidateSolution.substring(72+i);
 			if(!unityCorrect(tmp.toCharArray())) {
-				System.out.println(tmp);
+				System.out.println(candidateSolution.substring(0));
 				return -4;
 			}
 		}
