@@ -9,7 +9,7 @@ public class TestSudokuVerifier {
 	
 	@Test
 	public void test() {
-		String s= "123456789";
+		String s= "1234567a9";
 		sV= new SudokuVerifier(); 
 		System.out.println(sV.verify(s));
 		//fail("Not yet implemented");
