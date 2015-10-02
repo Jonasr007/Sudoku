@@ -34,7 +34,7 @@ public class SudokuVerifier {
 	
 	public boolean correctNumbers(char [] tmp) {	
 		for (int i=0; i<tmp.length; i++) {
-			if((int)(tmp[i])<48 || (int)(tmp[i])>56) {
+			if((int)(tmp[i])<48 || (int)(tmp[i])>57) {
 				System.out.println(tmp[i] + "  " + (int)(tmp[i]));
 
 				return false;
