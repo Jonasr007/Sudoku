@@ -39,7 +39,7 @@ public class SudokuVerifier {
 		}
 		
 		for (int i=0; i<tmp.length; i++) {
-			System.out.println((int)(tmp[i]);
+			System.out.println((int)(tmp[i]));
 			if((int)(tmp[i])<48 && (int)(tmp[i])>56) {
 				System.out.println(tmp[i]);
 				return false;
