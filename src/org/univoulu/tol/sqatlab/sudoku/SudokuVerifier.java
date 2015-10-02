@@ -14,10 +14,19 @@ public class SudokuVerifier {
 			return -1;
 		}
 		
+		String [] subgrids = new String[9];
+		for (int i=0; i<subgrids.length; i++) {
+			subgrids[i]= candidateSolution.substring(0+i*3,2+i*3); 
+		}
 		
-		String tmp = candidateSolution.substring(0, 9);
-		if(!unityCorrect(tmp.toCharArray()))
-			return -3;
+		for (int i=0; i<subgrids.length; i++) {
+			String tmp = candidateSolution.substring(0,8);
+			System.out.println(tmp);
+			if(!unityCorrect(tmp.toCharArray()))
+				return -3;
+		}
+
+		
 		return 0;		
 	}
 	
@@ -35,8 +44,6 @@ public class SudokuVerifier {
 	public boolean correctNumbers(char [] tmp) {	
 		for (int i=0; i<tmp.length; i++) {
 			if((int)(tmp[i])<48 || (int)(tmp[i])>57) {
-				System.out.println(tmp[i] + "  " + (int)(tmp[i]));
-
 				return false;
 			}
 		}				
