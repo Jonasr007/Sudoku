@@ -19,7 +19,7 @@ public class TestSudokuVerifier {
 					"891234567" +
 					"912345678";
 		sV= new SudokuVerifier(); 
-		System.out.println(sV.verify(s));
+		System.out.println(sV.verify(s) "AUS");
 		//fail("Not yet implemented");
 	    //assertEquals();
 		
