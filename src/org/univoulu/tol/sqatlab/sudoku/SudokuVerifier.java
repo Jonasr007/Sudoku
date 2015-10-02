@@ -19,12 +19,20 @@ public class SudokuVerifier {
 		for (int i=0; i<subgrids.length; i++) {
 			subgrids[i]= candidateSolution.substring(0+i*3,2+i*3); 
 		}
-		
+		// Test rows:
 		for (int i=0; i<subgrids.length; i++) {
 			String tmp = candidateSolution.substring(0+9*i,9+9*i);
-			System.out.println(tmp);
 			if(!unityCorrect(tmp.toCharArray()))
 				return -3;
+		}
+				
+		// Test Columns
+		for (int i=0; i<subgrids.length; i++) {
+			String tmp = candidateSolution.substring(0+i) + candidateSolution.substring(9+i) + candidateSolution.substring(18+i) 
+			+ candidateSolution.substring(27+i) + candidateSolution.substring(36+i) + candidateSolution.substring(45+i) 
+			+ candidateSolution.substring(54+i) + candidateSolution.substring(63+i) + candidateSolution.substring(72+i);
+			if(!unityCorrect(tmp.toCharArray()))
+				return -4;
 		}
 		
 		return 0;		
