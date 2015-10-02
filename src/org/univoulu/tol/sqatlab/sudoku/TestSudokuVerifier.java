@@ -10,14 +10,14 @@ public class TestSudokuVerifier {
 	@Test
 	public void test() {
 		String s= 	"123456789" +
-					"406789123" +
-					"789123056" +
+					"234567891" +
+					"345678912" +
+					"456789123" +
+					"567891234" + 
+					"678912345" +
+					"789123456" +
 					"891234567" +
-					"234067091" + 
-					"567891234" +
-					"678012345" +
-					"912345678" +
-					"345678012";
+					"912345678";
 		sV= new SudokuVerifier(); 
 		System.out.println(sV.verify(s));
 		//fail("Not yet implemented");
