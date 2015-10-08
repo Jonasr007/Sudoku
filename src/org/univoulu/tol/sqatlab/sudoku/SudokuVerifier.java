@@ -3,13 +3,8 @@ package org.univoulu.tol.sqatlab.sudoku;
 public class SudokuVerifier {
 
 	public int verify(String candidateSolution) {
-		// returns 1 if the candidate solution is correct
 		
-		// Verify lenght
-		//if(candidateSolution.length()!=81)
-		//	return -5;
-		
-		
+		// returns -1 if an incorrect digit 				
 		char[] solluctionArray = candidateSolution.toCharArray();		
 		if(!correctNumbers(solluctionArray)) {
 			return -1;
@@ -21,9 +16,10 @@ public class SudokuVerifier {
 		String [] subgrids = new String[9];
 		for (int i=0; i<3; i++) {
 			for (int j=0; j<3; j++) {
-			String tmp= candidateSolution.substring(27*j+i*3,27*j+i*3+3) 
-					+ candidateSolution.substring(27*j+i*3+9,27*j+i*3+3+9) 
-					+ candidateSolution.substring(27*j+i*3+18,27*j+i*3+3+18); 
+				int leftTopCorner=27*j+i*3;
+				String tmp= candidateSolution.substring(leftTopCorner,leftTopCorner+3) 
+					+ candidateSolution.substring(leftTopCorner+9,leftTopCorner+3+9) 
+					+ candidateSolution.substring(leftTopCorner+18,leftTopCorner+3+18); 
 			System.out.println(tmp);
 			if(!unityCorrect(tmp.toCharArray()))
 				return -2;
@@ -47,12 +43,18 @@ public class SudokuVerifier {
 			}
 		}
 		
+		// Verify lenght
+		//if(candidateSolution.length()!=81)
+		//	return -5;				
+		
 		return 0;		
 	}
 	
+	// im compares every digit in the array with every digit in the array (really ineffective but with so array tenable)
+	// return false if the is the same number to times on different places in the array
 	public boolean unityCorrect(char [] tmp) {
-		for (int i=0; i<tmp.length-1; i++) {
-			for (int j=0; j<tmp.length-1; j++) {
+		for (int i=0; i<tmp.length; i++) {
+			for (int j=0; j<tmp.length; j++) {
 				if(tmp[i]==tmp[j]&&i!=j) {
 					return false;
 				}
@@ -61,9 +63,10 @@ public class SudokuVerifier {
 		return true;
 	}
 	
+	//check if every digit in the array is between 1 and 9 
 	public boolean correctNumbers(char [] tmp) {	
 		for (int i=0; i<tmp.length; i++) {
-			if((int)(tmp[i])<48 || (int)(tmp[i])>57) {
+			if((int)(tmp[i])<49 || (int)(tmp[i])>57) {
 				return false;
 			}
 		}				
